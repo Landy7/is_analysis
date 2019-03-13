@@ -1,5 +1,2 @@
 for analysis
-hello ++++
-what are you tallking about!
-
-hello what are you doing
+this is landy7's github
