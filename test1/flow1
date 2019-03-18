@@ -26,6 +26,7 @@ endfork
 |教师|
 :阅卷出成绩;
 fork
+|教师|
 :成绩单;
 |教务处|
 if(有不及格？)then(有)
@@ -38,8 +39,9 @@ note right
 end note
 split
 :补考安排表]
-detach
+end
 split again
+:期末流程;
 split end
 fork again
 |教师|
