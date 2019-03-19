@@ -26,23 +26,16 @@ endfork
 |教师|
 :阅卷出成绩;
 fork
-|教师|
-:成绩单;
 |教务处|
-if(有不及格？)then(有)
-else
-  end
-endif
+:成绩单]
+if( 有不及格？) then( 有 )
 :安排补考;
-note right
-用split来并行
-end note
 split
 :补考安排表]
-end
+detach
 split again
-:期末流程;
-split end
+end split
+endif
 fork again
 |教师|
 :答卷]
