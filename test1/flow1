@@ -35,7 +35,7 @@ split
 detach
 split again
 end split
-else(否)
+else(没有)
 endif
 fork again
 |教师|
