@@ -435,7 +435,7 @@ end
 @enduml
 ```
 #### 3.9.3“维护读者信息”用例流程图如下
-![usecase10_flow](usecase10_flow.jpg)
+![usecase12_flow](usecase12_flow.jpg)
 #### 3.10“维护图书管理员信息”用例
 #### 3.10.1“维护图书管理员信息”用例规约
 |用例名称|维护图书管理员信息|
@@ -476,7 +476,7 @@ end
 @enduml
 ```
 #### 3.10.3“维护图书管理员信息”用例流程图如下
-![usecase11_flow](usecase11_flow.jpg)
+![usecase10_flow](usecase10_flow.jpg)
 #### 3.11“维护书目”用例
 #### 3.11.1“维护书目”用例规约
 |用例名称|维护书目|
@@ -517,7 +517,7 @@ end
 @enduml
 ```
 #### 3.11.1“维护书目”用例流程图如下
-![usecase12_flow](usecase12_flow.jpg)
+![usecase11_flow](usecase11_flow.jpg)
 
 
 
