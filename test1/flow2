@@ -8,13 +8,13 @@ note left
 if条件语句
 end note
 :登记客户信息;
-else(不是)
+else(否)
 endif
 :上门勘察;
 :制定方案;
 |客户|
 if(满意吗？)then(是)
-else
+else(否)
 end
 endif
 :签订服务合同;
