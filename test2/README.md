@@ -31,6 +31,7 @@ rectangle 图书馆系统 {
 @enduml
 ```
 #### 用例关系图如下：
+![usecase1_flow](usecase1_flow.jpg)
 
 ### 2.参与者说明:
 #### 超级管理员
