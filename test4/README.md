@@ -348,4 +348,39 @@ A -->U:返回相应操作结果
 1.参与者：actor：超级管理员 boundary:图书管理员信息管理窗口 database:数据库<br>
 2.消息 输入查询/添加/修改/删除的图书管理员信息 -> 查询/添加/修改/删除相应图书管理员 -> 返回相应操作结果 -> 返回相应操作结果<br>
 
+### 11.查询借阅情况
+#### 11.1查询借阅情况的PlantUML代码
+```
+@startuml
+title
+ 查询借阅情况
+ <u>说明：图中的“/”均表示“或者”</u>
+end title
+skinparam sequenceArrowThickness 2
+skinparam maxmessagesize 60
+skinparam sequenceParticipant underline
+actor "读者" as U
+boundary "查询借阅窗口   " as A
+database "数据库" as B
+collections "借书记录" as C
+activate U
+activate A
+U ->A:查询借阅信息
+A ->B:查询借书记录
+activate B
+B ->C:获取借书记录
+activate C
+C -->B:返回操作结果
+B -->A:返回查询结果
+A -->U:返回查询结果
+
+@enduml
+
+```
+#### 11.2查询借阅情况顺序图
+![sequence11_flow](sequence11_flow.jpg)
+
+#### 11.3查询借阅情况顺序图说明
+1.参与者：actor：读者 boundary:查询借阅窗口 database:数据库<br>
+2.消息 查询借阅信息 -> 查询借书记录 -> 获取借书记录-> 返回操作结果 -> 返回查询结果 -> 返回查询结果<br>
 
