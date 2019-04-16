@@ -15,6 +15,6 @@ activate A
 A ->B:获取对应图书信息
 deactivate A
 activate B
-B ->U:输出图书信息
+B ->U:返回图书信息
 deactivate B
 @enduml

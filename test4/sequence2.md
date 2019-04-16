@@ -12,11 +12,11 @@ database "数据库" as B
 activate U
 activate A
 U ->A:点击个人信息栏目
-A ->U:显示个人信息
+A -->U:显示个人信息
 U ->A:点击并修改个人信息
 A ->A:验证提交信息合法性
 A ->B:更新信息
 activate B
-B ->A:更新成功
+B -->A:返回更新结果
 deactivate B
 @enduml

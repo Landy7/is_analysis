@@ -16,4 +16,4 @@ A ->B:查询/添加/修改/删除相应读者
 activate B
 B -->A:返回相应操作结果
 A -->U:返回相应操作结果
-@enduml
+@enduml  
