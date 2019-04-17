@@ -8,6 +8,7 @@ skinparam maxmessagesize 60
 skinparam sequenceParticipant underline
 actor "用户" as U
 participant "图书" as A
+activate U
 U ->A:输入图书信息
 activate A
 A -->U:返回图书信息

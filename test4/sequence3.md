@@ -11,6 +11,7 @@ participant "读者" as A
 participant "资源项" as B
 participant "馆藏资源品种" as C
 participant "借书记录" as D
+activate U
 U ->A:验证读者
 activate A
 U ->B:获取资源项

@@ -9,6 +9,7 @@ skinparam sequenceParticipant underline
 actor "读者/图书管理员/超级管理员" as U
 participant "用户" as A
 U ->A:点击个人信息栏目
+activate U
 activate A
 A -->U:显示个人信息
 U ->A:点击并修改个人信息
