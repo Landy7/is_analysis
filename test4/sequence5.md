@@ -6,24 +6,26 @@ end title
 skinparam sequenceArrowThickness 2
 skinparam maxmessagesize 60
 skinparam sequenceParticipant underline
-actor "读者" as U
-boundary "预定图书办理窗口   " as A
-collections "预定记录" as B
-database "数据库" as C
-activate U
+
+actor 读者
+participant "馆藏资源品种" as A
+participant "预定记录" as B
+
+activate 读者
+读者 ->A:输入预定图书信息
 activate A
-U ->A:输入图书信息
-A ->C:查询该图书信息
-activate C
-C -->A:返回图书信息
-U ->A:确认预定
-A ->C:修改库存
-C -->A:返回操作结果
-A ->B:添加预定记录
+
+A -->读者:返回操作结果
+deactivate A
+
+读者 ->A:选择预定图书
+activate A
+
+A ->B:生成预定记录
+deactivate A
 activate B
-B ->C:添加对应预定记录
-C -->B:返回操作结果
-B -->A:返回操作结果
-A -->U:返回预定结果
+
+B -->读者:输出预定结果
+deactivate B
 
 @enduml

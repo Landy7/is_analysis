@@ -7,13 +7,15 @@ skinparam sequenceArrowThickness 2
 skinparam maxmessagesize 60
 skinparam sequenceParticipant underline
 actor "图书管理员/超级管理员" as U
-boundary "图书管理窗口" as A
-database "数据库" as B
-activate U
-U ->A:输入要查询/添加/修改/删除的书目信息
+participant "馆藏资源品种" as A
+participant "图书" as B
+U ->A:输入所要查询/添加/修改/删除的书目信息
 activate A
-A ->B:查询/添加/修改/删除相应书目
+A ->A:查询/添加/修改/删除书目
+A -->U:提示“查询/添加/修改/删除成功”
+deactivate A
+U ->B:对应查询/添加/修改/删除图书
 activate B
-B -->A:返回相应操作结果
-A -->U:返回相应操作结果
+B -->U:提示“查询/添加/修改/删除成功”
+deactivate B
 @enduml
