@@ -2,8 +2,8 @@
 |学号|班级|姓名|
 |:---------------:|:------------:|:------------:|
 |201610414105|软件16-1|兰迪|
-
-### 1.1 管理员信息（Manager）表(包括超级管理员和图书管理员)：
+###1.数据库表设计
+#### 1.1 管理员信息（Manager）表(包括超级管理员和图书管理员)：
 |项目|字段名|类型与宽度|主键、外键|是否允许为空值|约束|说明|
 |:------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 |ID|managerId|int(12)|主键|×|||
@@ -82,24 +82,37 @@
 |ISBN|ISBN|int(20)||×|||
 |预定记录号|reserveId|int(20)|外键|×|||
 |读者ID|readerId|int(20)|外键|×||参照读者信息表|
-|书名|publish|varchar(20)||×|||
+|书名|bookName|varchar(20)||×|||
 |预定日期|orderTime|datetime||×|||
 |取书日期|takeTime|datetime||√|||
 |是否超期未取|isOverDue|varchar(10)||×|||
 |是否取消预定|isCancelOrder|varchar(10)||×|||
 
-### 1.6 预定记录信息(order)表：
+### 1.7 逾期记录信息(overdue)表：
 |项目|字段名|类型与宽度|主键、外键|是否允许为空值|约束|说明|
 |:------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|ID|orderId|int(20)|主键|×|||
+|ID|overdueId|int(20)|主键|×|||
 |ISBN|ISBN|int(20)||×|||
-|预定记录号|reserveId|int(20)|外键|×|||
+|馆藏流水号|serId|int(20)|外键|×||参照馆藏资源信息表|
 |读者ID|readerId|int(20)|外键|×||参照读者信息表|
-|书名|publish|varchar(20)||×|||
-|预定日期|orderTime|datetime||×|||
-|取书日期|takeTime|datetime||√|||
-|是否超期未取|isOverDue|varchar(10)||×|||
-|是否取消预定|isCancelOrder|varchar(10)||×|||
+|书名|bookName|varchar(20)||×|||
+|逾期日期|overTime|datetime||×|||
+|归还日期|returnTime|datetime||×|||
+|逾期时长|overLenth|int(10)||×|||
+|备注|detail|varchar(30)||×|||
 
+### 1.8 罚款细则信息(punish)表：
+|项目|字段名|类型与宽度|主键、外键|是否允许为空值|约束|说明|
+|:------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|ID|punishId|int(20)|主键|×|||
+|ISBN|ISBN|int(20)||×|||
+|馆藏流水号|serId|int(20)|外键|×||参照馆藏资源信息表|
+|读者ID|readerId|int(20)|外键|×||参照读者信息表|
+|书名|bookName|varchar(20)||×|||
+|罚款原因|punishReason|varchar(20)||×|||
+|罚款金额|punishMoney|varchar(10)||×|||
+|处理人ID|managerId|int(10)||×|||
+|罚款时间|punishTime|datetime||×|||
 
+###1.界面设计
 
