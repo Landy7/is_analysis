@@ -131,6 +131,7 @@ class 逾期记录{
 
 class 罚款细则{
     ID
+    ISBN
     读者ID
     馆藏流水号
     书名
