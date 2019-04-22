@@ -70,8 +70,8 @@
 |读者ID|readerId|int(20)|外键|×||参照读者信息表|
 |书名|bookName|varchar(20)||×|||
 |借书日期|borrowTime|datetime||×|||
-|归还日期|returnDate|datetime||√||为空说明还没有归还|
-|借书时长|borrowLenth|int(10)||×|||
+|归还日期|returnTime|datetime||×||没有会显示"暂无"|
+|借书期限|borrowLenth|int(10)||×|||
 |是否归还|isReturn|varchar(5)||×|||
 |是否逾期|isOverdue|varchar(5)||×|||
 
@@ -114,5 +114,77 @@
 |处理人ID|managerId|int(10)||×|||
 |罚款时间|punishTime|datetime||×|||
 
-###1.界面设计
+###2.界面设计
 
+###3.API接口设置
+#### 3.1 查询借书记录
+- 功能：查询借书记录，可以获取全部的借书记录信息<br>
+- 请求地址：http://api.library.com/v1/api/borrow<br>
+- 请求方式：GET<br>
+- 请求参数：
+|参数名称|必填|说明|
+|:-------:|:-------------: | :----------:|
+|ID|是|用户登录状态凭证 |
+|access_token|是|用于验证请求合法性的认证信息 |
+|method|是|固定为 “GET”|
+- 返回实例：
+```
+{
+    "info": "所有的借书记录",
+    "total": 1024,
+    "data": [
+        {
+        "ID": "1",
+        "ISBN":"978-7-302-32982-4",
+        "readerId":"201610414105"
+        "bookName": "数据库原理",
+        "borrowTime": "2018-01-23 17:34",
+        "returnTime": "2018-01-23 17:34",
+        "borrowLenth": "2018-01-23至2018-06-23",
+        "isReturn": "是",
+        "isOverdue": "否",
+        "botton":"删除",
+        "path": "http://api.library.com/v1/api/borrow/ID/borrowList",
+        },
+        {
+        ...其他还书单
+        }
+    ]
+    "code": 200
+}
+
+```
+- 返回参数说明:
+|参数名称|说明|
+|:-------:|:------------- |
+|Info|返回的提示信息|
+|total|返回借书记录的数量|
+|data|返回借书记录列表内容数据主体<br>"ID":借书记录单号<br>"ISBN":国际版本号<br>"bookName": "书名"<br>"borrowTime": "借书日期"<br>"returnTime": "还书处理日期"<br>"borrowLenth": "还书期限"<br>"isReturn": "是否还书"<br>"isOverdue": "是否逾期"<br>"botton": "删除:删除已还书的借书记录"<br>"path": 借书记录详情链接地址"|
+|code|返回码|
+
+
+#### 3.2 删除借书记录（只能删除已还书的借书记录）
+- 功能：用于图书管理员删除已还书的借书记录
+- 请求地址： http://api.library.com/v1/api/borrow/delete
+- 请求方法：DELETE
+- 请求参数：
+
+|参数名称|必填|说明|
+|:-------:|:-------------: | :----------:|
+|ID|是|用户登录状态凭证 |
+|access_token|是|用于验证请求合法性的认证信息 |
+|method|是|固定为 “DELETE”|
+
+- 返回实例：
+```
+{
+    "info": "删除成功",
+    "code": 200
+}
+```
+- 返回参数说明：
+    
+|参数名称|说明|
+|:-------:|:-------------: |
+|Info|返回的提示信息|
+|code|返回码|
