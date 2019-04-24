@@ -116,7 +116,7 @@
 
 ### 2.界面设计
 #### 2.1页面展示
-![pic.png](pic.png)
+![pic.png](pic1.PNG)
 #### [2.2 查询借书记录页面相关代码](https://github.com/Landy7/is_analysis_pages)
 
 ### 3.API接口设置
