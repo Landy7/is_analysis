@@ -33,29 +33,8 @@
   |teacher_id|老师工号|
   
 - 返回实例：
-学生课程列表：
-        { 
-            "status": true,
-            "info": null,
-            "data": {
-                "courses": [{
-                    "course_id": "03367565",
-                    "course_name": "形式与政策(6)",
-                    "techer": {
-                        "techer_id": "78656790",
-                        "name": "兰迪"
-                    }
-                },{
-                    "course_id": "03367565",
-                    "course_name": "数据库原理",
-                    "teacher": {
-                        "teacher_id": "22223982",
-                        "name": "黄荣兵"
-                    }
-                }]   
-            }    
-        }
-老师课程列表：
+   
+
         { 
             "status": true,
             "info": null,
