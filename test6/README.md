@@ -45,7 +45,7 @@
 ~~~
 
 ## 四.数据库设计
-![数据库设计](./数据库设计.md)
+## [参见数据库设计](./数据库设计.md)
 
 ## 五. 界面及用例详细设计
 
@@ -72,6 +72,10 @@
 ### [“修改课程”用例](./用例/修改课程.md),[界面](https://landy7.github.io/is_analysis_pages/test6/形式与政策.html)
 ### [“增加课程”用例](./用例/增加课程.md),[界面](https://landy7.github.io/is_analysis_pages/test6/添加课程.html)
 ### [“删除课程”用例](./用例/删除课程.md),[界面](https://landy7.github.io/is_analysis_pages/test6/形式与政策.html)
+
+## 六. 参考文献
+- 绘制方法参考[PlantUML标准](http://plantuml.com)
+- Markdown格式参考：https://www.jianshu.com/p/b03a8d7b1719
 
 
 
