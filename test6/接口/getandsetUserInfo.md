@@ -28,6 +28,7 @@
                 "user_id":"201610414105",    
                 "name":"兰迪",
                 "github_username":"landy7",
+                "gender":"女",
                 "role":"学生",
                 "tel":"18183371221"
                 "website":"https://github.com/Landy7/is_analysis/"
@@ -49,8 +50,11 @@
             "data": {
                 "user_id":"35677656",    
                 "name":"张三",
+                "gender":"女",
                 "github_username":"landy76",
                 "role":"老师",
+                "tel":"18183371221"
+                "website":"https://github.com/Landy76/is_analysis/"
                 "teacher": {
                     "department": "学工办"
                 }  
@@ -65,10 +69,11 @@
   |info|返回结果说明信息|
   |data|返回主体信息JSON串|
   |user_id|学号或者工号|
+  |gender|用户性别|
   |name|用户的真实姓名|
-  |website|Github网址|  
-  |github_username|gitHub用户名|
-  |tel|电话|
+  |website|用户Github网址|  
+  |github_username|用户gitHub用户名|
+  |tel|用户电话|
   |student|学生信息|
   |major|学生所在专业|
   |grade|学生成绩|

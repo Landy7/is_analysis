@@ -17,7 +17,7 @@
 
         {
             "student_id": "201610144106",
-            "term": "2015-2016学年第1学期"
+            "term": "2015-2016学年第一学期"
         }
         {
             "teacher_id": "77865498",
@@ -65,6 +65,7 @@
   |courses|返回符合条件的所有课程集合，若空则返回[]|
   |course_id|课程编号|
   |course_name|课程名称|
+  |student|学生信息|
   |course_major|开课专业|  
   |teacher|老师信息|
   |teacher_id|老师工号|

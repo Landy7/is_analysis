@@ -1,6 +1,6 @@
 
 
-# 接口：getChoice_courses[返回](../README.md)
+# 接口：getChoice_Courses[返回](../README.md)
 [选课](../用例/选课.md)
 
 - 功能：

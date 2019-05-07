@@ -22,7 +22,6 @@
             "course_term": "2018-2019学年第二学期",
             "course_major": "软件工程",
             "course_class": "2016级1，2班",
-            "techer_id": "21228767"
         }    
     
         
@@ -36,7 +35,6 @@
   |course_term|开课学期|
   |course_major|开课专业|
   |course_class|开课班级|
-  |teacher_id|老师编号|
   * 注：新建课程无需传入course_id,course_id为数据库主键，创建后无法更改，
   teacher_id由系统关联，同样无法更改。
   
