@@ -1,4 +1,4 @@
-# 接口：getAssess_details  [返回](../../README.md)
+# 接口：getAssess_details  [返回](../README.md)
 用例： [查看评分点](../用例/查看评分点.md)
 
 - 功能：

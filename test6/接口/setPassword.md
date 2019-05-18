@@ -1,4 +1,4 @@
-# 接口：setPassword  [返回](../../README.md)
+# 接口：setPassword  [返回](../README.md)
 用例： [修改密码](../用例/修改密码.md)
 
 - 功能：

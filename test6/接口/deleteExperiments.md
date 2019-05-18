@@ -1,4 +1,4 @@
-# 接口：deleteExperiments  [返回](../../README.md)
+# 接口：deleteExperiments  [返回](../README.md)
 用例：[删除实验任务](../用例/删除实验任务.md)
 
 - 功能：

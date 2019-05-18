@@ -1,4 +1,4 @@
-# 接口：deleteAssess_details  [返回](../../README.md)
+# 接口：deleteAssess_details  [返回](../README.md)
 用例：[删除评分点](../用例/删除评分点.md)
 
 - 功能：

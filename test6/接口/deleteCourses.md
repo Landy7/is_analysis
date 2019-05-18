@@ -1,4 +1,4 @@
-# 接口：deleteCourses  [返回](../../README.md)
+# 接口：deleteCourses  [返回](../README.md)
 用例：[删除课程](../用例/删除课程.md)
 
 - 功能：

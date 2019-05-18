@@ -1,4 +1,4 @@
-# 接口：getTerms  [返回](../../README.md)
+# 接口：getTerms  [返回](../README.md)
 用例： [选择学期](../用例/选择学期.md)
 
 - 功能：

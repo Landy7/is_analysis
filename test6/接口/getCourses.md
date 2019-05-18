@@ -1,4 +1,4 @@
-# 接口：getCourses  [返回](../../README.md)
+# 接口：getCourses  [返回](../README.md)
 用例： [课程列表](../用例/课程列表.md)
 
 - 功能：

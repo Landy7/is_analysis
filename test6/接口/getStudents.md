@@ -1,4 +1,4 @@
-# 接口：getStudents  [返回](../../README.md)
+# 接口：getStudents  [返回](../README.md)
 用例： [学生列表](../用例/学生列表.md)
 
 - 功能：

@@ -1,4 +1,4 @@
-# 接口：setScores  [返回](../../README.md)
+# 接口：setScores  [返回](../README.md)
 用例： [评定成绩](../用例/评定成绩.md)
 
 - 功能：

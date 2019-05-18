@@ -1,4 +1,4 @@
-# 接口：setCourses  [返回](../../README.md)
+# 接口：setCourses  [返回](../README.md)
 用例：[增加课程](../用例/增加课程.md) [修改课程](../用例/修改课程.md) 
 
 - 功能：
